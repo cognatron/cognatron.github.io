@@ -193,8 +193,6 @@ function preload() {
   // Carga cabezas
 
   h2 = loadImage("assets/head-02.png");
-  h3 = loadImage("assets/head-03.png");
-  h4 = loadImage("assets/head-04.png");
 
   // Carga ciclo G
 
