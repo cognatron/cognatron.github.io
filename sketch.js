@@ -1,3 +1,26 @@
+// Variables globales de p5.js:
+
+/*global
+
+preload,
+createCanvas,
+background,
+push,
+pop,
+translate,
+scale,
+rotateX,
+rotateY,
+rotate,
+loadImage,
+image,
+frameRate,
+mouseMoved,
+draw,
+setup,
+
+*/
+
 ////// Lienzo
 
 var ancho = 400;
@@ -32,7 +55,7 @@ var rude = {
   // Suavizado
 
   xG: 0,
-  yG: 0,  
+  yG: 0,
   suavizado: 0.4, // 0.5
 
 
@@ -166,7 +189,7 @@ var rude = {
   render: function() {
     this.cabeza = h2;
     push();
-    //Cuerpo  
+    //Cuerpo
     translate(this.transX, this.transY);
     rotate(this.rot);
     image(this.anim, this.varX, this.varY);
@@ -209,7 +232,7 @@ function preload() {
     var nombreB = "assets/boy-walk-" + (h + 1) + ".png";
     rude.cicloB[h] = loadImage(nombreB);
 
-    //Log cheq  
+    //Log cheq
     console.log(nombreB);
     console.log(rude.cicloB.length);
   }
@@ -231,7 +254,7 @@ function draw() {
   rude.control();
   rude.render();
   pop();
-  
+
 }
 
 function mouseMoved() {
