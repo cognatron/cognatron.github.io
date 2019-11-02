@@ -226,17 +226,6 @@ function preload() {
     console.log(rude.cicloG.length);
   }
 
-  // Carga ciclo B
-
-  for (var h = 0; h < rude.freqAnim; h++) {
-    var nombreB = "assets/boy-walk-" + (h + 1) + ".png";
-    rude.cicloB[h] = loadImage(nombreB);
-
-    //Log cheq
-    console.log(nombreB);
-    console.log(rude.cicloB.length);
-  }
-
 }
 
 function setup() {
